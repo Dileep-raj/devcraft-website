@@ -4,7 +4,7 @@
             "profile-img": "primaryschool/Shreenivasa G .png",
             "education": "CPEd, Kan& Eng Sr typing, PUC",
             "subject": "",
-            "date": "26-07-1994",
+            "date-of-joining": "26-07-1994",
             "experience": 29,
             "extra": "In-Charge Head Master"
         },
@@ -12,7 +12,7 @@
             "profile-img": "primaryschool/Veena T.png",
             "education": "PUC, TCH, B.Sc, B.Ed",
             "subject": "",
-            "date": "31-07-2002",
+            "date-of-joining": "31-07-2002",
             "experience": 22,
             "extra": ""
         },
@@ -20,7 +20,7 @@
             "profile-img": "primaryschool/Kalpana T.png",
             "education": "TCH, PUC",
             "subject": "",
-            "date": "10-08-2002",
+            "date-of-joining": "10-08-2002",
             "experience": 22,
             "extra": ""
         },
@@ -28,7 +28,7 @@
             "profile-img": "primaryschool/Lalita Baby.png",
             "education": "TCH,BA,PUC",
             "subject": "",
-            "date": "25-08-2008",
+            "date-of-joining": "25-08-2008",
             "experience": 16,
             "extra": ""
         },
@@ -36,7 +36,7 @@
             "profile-img": "primaryschool/Soubhagya P.png",
             "education": "MA, B.Ed,BA",
             "subject": "",
-            "date": "09-03-2016",
+            "date-of-joining": "09-03-2016",
             "experience": 7,
             "extra": ""
         },
@@ -44,7 +44,7 @@
             "profile-img": "primaryschool/Lavanya C.png",
             "education": "D.Ed, PUC",
             "subject": "",
-            "date": "30-03-2016",
+            "date-of-joining": "30-03-2016",
             "experience": 8,
             "extra": ""
         },
@@ -52,7 +52,7 @@
             "profile-img": "primaryschool/Soumya R.png",
             "education": "MA,B.Ed, BA",
             "subject": "",
-            "date": "06-06-2020",
+            "date-of-joining": "06-06-2020",
             "experience": 4,
             "extra": ""
         }

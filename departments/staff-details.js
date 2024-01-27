@@ -17,7 +17,7 @@ function loadStaffDetails(staffsJSON) {
         if (education != "") cardInnerHTML += `Education : ${education} <br>`
         if (date != "") cardInnerHTML += `Date of joining : ${date} <br>`
 
-        cardInnerHTML += `Subject : ${subject} <br>`
+        if (subject != "" && subject != null) cardInnerHTML += `Subject : ${subject} <br>`
         cardInnerHTML += `Teaching Experience : ${experience} years`
         cardInnerHTML += `</p></div>`;
         card.innerHTML = cardInnerHTML
