@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science</title>
+    <link rel="shortcut icon" href="../../logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="../departments.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <script src="../../js/jQuery_3.7.1.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container">
+            <div class="h3">Science</div>
+            Embark on a comprehensive scientific journey with our PCMB and PCMCS courses. The PCMB program integrates
+            Physics, Chemistry, Mathematics, and Biology, offering a solid foundation for diverse scientific careers.
+            Meanwhile, PCMCS combines Physics, Chemistry, Mathematics, and Computer Science, providing a well-rounded
+            understanding of both physical sciences and computational principles. These courses prepare students for a
+            future in science and technology, fostering a strong theoretical base alongside practical applications.
+        </div><br>
+
+        <div class="container">
+            <div class="h4">Staff details</div>
+            <div class="card-columns" id="staffDetails"> </div>
+        </div>
+    </div>
+
+    <script>
+        const staffDetails = document.getElementById("staffDetails")
+        document.addEventListener("DOMContentLoaded", () =>
+            $.getJSON("science.json", (json) => {
+                // staffsJSON = json
+                // console.log(json)
+                // console.log("JSON File loaded");
+                loadStaffDetails(json)
+            })
+        )
+        function loadStaffDetails(staffsJSON) {
+            const staffs = staffsJSON.staffs, row = document.createElement("div")
+            row.className = "row"
+            for (const staff in staffs) {
+                // console.log(staff);
+                const profileDetails = staffs[staff]
+                const image = profileDetails["profile-img"], education = profileDetails["education"], subject = profileDetails["subject"]
+                const date = profileDetails["date-of-joining"], experience = profileDetails["experience"], extra = profileDetails["extra"]
+                const card = document.createElement("div");
+                card.className = "card staff-card"
+                var cardInnerHTML = `
+                    <img class="card-img-top staff-profile-img" src="${image == "" ? "../blank.webp" : image}" alt="Staff Profile image">
+                    <div class="card-body">
+                        <h4 class="card-title">${staff}</h4>
+                        <p class="card-text">`;
+
+                if (extra != "" && extra != null) cardInnerHTML += `${extra} <br>`
+                if (education != "") cardInnerHTML += `Education : ${education} <br>`
+                if (date != "") cardInnerHTML += `Date of joining : ${date} <br>`
+
+                cardInnerHTML += `Subject : ${subject} <br>`
+                cardInnerHTML += `Teaching Experience : ${experience} years`
+                cardInnerHTML += `</p></div>`;
+                card.innerHTML = cardInnerHTML
+                staffDetails.appendChild(card)
+            }
+        }
+    </script>
+</body>
+
+</html>

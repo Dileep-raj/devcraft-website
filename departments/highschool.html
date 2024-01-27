@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High School</title>
+    <link rel="shortcut icon" href="../logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="departments.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jQuery_3.7.1.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container">
+            <div class="h3">High School</div>
+
+        </div><br>
+
+        <div class="container">
+            <div class="h4">Staff details</div>
+            <div class="card-columns" id="staffDetails"> </div>
+        </div>
+    </div>
+
+    <script>
+        const staffDetails = document.getElementById("staffDetails")
+        document.addEventListener("DOMContentLoaded", () =>
+            $.getJSON("highschool.json", (json) => {
+                // staffsJSON = json
+                // console.log(json)
+                // console.log("JSON File loaded");
+                loadStaffDetails(json)
+            })
+        )
+    </script>
+    <script src="staff-details.js"></script>
+</body>
+
+</html>

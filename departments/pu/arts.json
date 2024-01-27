@@ -1,0 +1,35 @@
+{
+    "staffs": {
+        "Laxmi Prasad S B": {
+            "profile-img": "arts/Laxmi Prasad S B.png",
+            "education": "M.Sc,B.Ed",
+            "subject": "HISTORY",
+            "date-of-joining": "19/07/1994 ",
+            "experience": 30,
+            "extra": "Head of Tourism Dept.- Govt PU College Rajanukunte"
+        },
+        "B R Shivanna": {
+            "profile-img": "",
+            "education": "MA, B.Ed",
+            "subject": "ECONOMICS",
+            "date-of-joining": "08/01/2018",
+            "experience": 6,
+            "extra": "Head of Library Dept. GHS Rajanukunte"
+        },
+        "Manjula V R": {
+            "profile-img": "arts/Manjula V R.png",
+            "education": "",
+            "subject": "POLITICAL SCIENCE",
+            "date-of-joining": "05/07/2007",
+            "experience": 17
+        },
+        "Gouthami J K": {
+            "profile-img": "arts/Gouthami J K.png",
+            "education": "MA, B.Ed",
+            "subject": "SOCIOLOGY",
+            "date-of-joining": "01/07/2013",
+            "experience": 11,
+            "extra": "Head of NSS Club Dept.- Govt PU College Rajanukunte"
+        }
+    }
+}

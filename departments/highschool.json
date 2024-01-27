@@ -1,0 +1,76 @@
+{
+    "staffs": {
+        "Kanataraju B G": {
+            "profile-img": "highschool/Kanataraju B G.png",
+            "education": "M.Sc, M.Ed, KES",
+            "subject": "",
+            "date-of-joining": "15-06-2007",
+            "experience": 17,
+            "extra": "Head Master"
+        },
+        "Suguna SM": {
+            "profile-img": "highschool/Suguna SM.png",
+            "education": "M.Sc, B.Ed",
+            "subject": "PCM",
+            "date-of-joining": "12-07-1997",
+            "experience": 27,
+            "extra": ""
+        },
+        "Uma Dindoor": {
+            "profile-img": "highschool/Uma Dindoor.png",
+            "education": "MA, B.Ed ",
+            "subject": "Arts",
+            "date-of-joining": "30-07-2007",
+            "experience": 17,
+            "extra": "Head of Tourism,  Event  and Cultural Dept. GHS Rajanukunte"
+        },
+        "Shreedevi G": {
+            "profile-img": "highschool/Shreedevi G.png",
+            "education": "B.Sc, B.Ed",
+            "subject": "CBZ",
+            "date-of-joining": "09-07-2008",
+            "experience": 16,
+            "extra": "Head of Science and Technology Dept. GHS Rajanukunte"
+        },
+        "Manjula Bai S": {
+            "profile-img": "highschool/Manjula Bai S.png",
+            "education": "MA, B.Ed",
+            "subject": "Hindi",
+            "date-of-joining": "03-06-1985",
+            "experience": 39,
+            "extra": "Head of Library Dept. GHS Rajanukunte"
+        },
+        "Siddangangamma": {
+            "profile-img": "highschool/Siddangangamma.png",
+            "education": "MA, B.Ed",
+            "subject": "Kannada",
+            "date-of-joining": "14-02-1985",
+            "experience": 39,
+            "extra": "Head of Controller of Examination (COE) GHS Rajanukunte"
+        },
+        "Vedavati Bhat": {
+            "profile-img": "highschool/Vedavati Bhat.png",
+            "education": "M.P.Ed",
+            "subject": "PT",
+            "date-of-joining": "25-07-1994",
+            "experience": 30,
+            "extra": "Head of Physical Education and National Festivals. GHS Rajanukunte"
+        },
+        "Katyayani. S": {
+            "profile-img": "highschool/Katyayani S.png",
+            "education": "PUC",
+            "subject": "",
+            "date-of-joining": "21-10-2017",
+            "experience": 7,
+            "extra": ""
+        },
+        "Mr. Balaiah D": {
+            "profile-img": "highschool/Balaiah D.png",
+            "education": "PUC",
+            "subject": "Swimming coach",
+            "date-of-joining": "21-10-2017",
+            "experience": 24,
+            "extra": "National Swimmer"
+        }
+    }
+}

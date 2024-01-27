@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add staff</title>
+    <style>
+        #name,
+        #education,
+        #date,
+        #experience,
+        #subject,
+        #extra,
+        #convertedJSON {
+            margin: 10px;
+            padding: 5px;
+        }
+
+        #dragdrop {
+            border: 2px grey dashed;
+            background-color: #22222255;
+            width: 500px;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .uploadOuter {
+            text-align: center;
+            padding: 20px;
+
+            strong {
+                padding: 0 10px
+            }
+        }
+
+        .dragBox {
+            width: 250px;
+            height: 100px;
+            margin: 0 auto;
+            position: relative;
+            text-align: center;
+            font-weight: bold;
+            line-height: 95px;
+            color: #999;
+            border: 2px dashed #ccc;
+            display: inline-block;
+            transition: transform 0.3s;
+
+            input[type="file"] {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .draging {
+            transform: scale(1.1);
+        }
+
+        #preview {
+            text-align: center;
+
+            img {
+                max-width: 100%
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="uploadOuter">
+        <label for="uploadFile" class="btn btn-primary">Upload Image</label>
+        <strong>OR</strong>
+        <span class="dragBox">
+            Drag and Drop image here
+            <input type="file" onChange="dragNdrop(event)" ondragover="drag()" ondrop="drop()" id="uploadFile" />
+        </span>
+    </div>
+    <!-- <div id="dragdrop">
+        <p> Drag image here </p>
+        <p>or</p>
+        <p>Paste using Ctrl+V</p>
+        <p>or</p>
+        <input type="file" id="uploadImage">
+    </div> -->
+    <a id="previewlink"> <img alt="Image preview" id="preview" width="500"> </a>
+    <div>
+        <input type="text" id="name" placeholder="Staff name" value="">
+        <input type="text" id="subject" placeholder="Subject">
+        <input type="text" id="education" placeholder="Education" value="">
+        <input type="number" id="experience" placeholder="Experience">
+        <input type="text" id="date" placeholder="Date of joining">
+        <input type="text" id="extra" placeholder="Extra">
+
+    </div>
+    <p id="msg"></p>
+    <button id="save">Save</button><br>
+    <textarea id="convertedJSON" cols="50" rows="30" placeholder="Converted JSON"></textarea>
+</body>
+
+<script>
+
+    const previewlink = document.getElementById("previewlink"), preview = document.getElementById('preview'), save = document.getElementById("save")
+    const staffName = document.getElementById("name"), education = document.getElementById("education"), convertedJSON = document.getElementById("convertedJSON")
+    const subject = document.getElementById("subject"), msg = document.getElementById("msg"), experience = document.getElementById("experience"), date = document.getElementById("date")
+    const extra = document.getElementById("extra")
+    const dragdrop = document.getElementById("dragdrop"), uploadImage = document.getElementById("uploadImage")
+
+    var imgData;
+    var staffsJSON = { "staffs": {} }
+
+    function getBase64Image(img) {
+        var canvas = document.createElement("canvas");
+        canvas.width = img.width;
+        canvas.height = img.height;
+
+        var ctx = canvas.getContext("2d");
+        ctx.drawImage(img, 0, 0);
+
+        var dataURL = canvas.toDataURL("image/png");
+        return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
+    }
+
+    document.addEventListener('DOMContentLoaded', () =>
+        document.addEventListener('paste', function (evt) {
+            const clipboardItems = evt.clipboardData.items;
+            const items = [].slice.call(clipboardItems).filter((item) => {
+                // Filter the image items only
+                return item.type.indexOf('image') !== -1
+            });
+            if (items.length === 0) return;
+
+            const item = items[0];
+            const blob = item.getAsFile();
+
+            preview.src = URL.createObjectURL(blob);
+            previewlink.href = URL.createObjectURL(blob);
+
+            imgData = getBase64Image(preview)
+            localStorage.setItem("imgData", imgData)
+        }));
+
+    save.addEventListener("click", () => {
+        // if (preview.src == "") {
+        //     msg.innerHTML = "Please paste the image"
+        //     return
+        // }
+        if (staffName.value == "" || education.value == "") {
+            msg.innerHTML = "Please enter file name and education"
+            return
+        }
+        else msg.innerHTML = ""
+
+        staffsJSON["staffs"][staffName.value] = {
+            "profile-img": staffName.value.replace(/(\.[a-zA-Z]*$)/, "") + ".png", "education": education.value, "subject": subject.value, "date": date.value,
+            "experience": parseInt(experience.value), "extra": extra.value
+        }
+
+        if (preview.src == "") staffsJSON["staffs"][staffName.value]["profile-img"] = ""
+
+        previewlink.download = staffName.value
+        previewlink.click()
+        convertedJSON.innerHTML = JSON.stringify(staffsJSON)
+    })
+
+</script>
+
+<script>
+    "use strict";
+    function dragNdrop(event) {
+        var fileName = URL.createObjectURL(event.target.files[0]);
+        // var preview = document.getElementById("preview");
+        // var previewImg = document.createElement("img");
+        // previewImg.setAttribute("src", fileName);
+        // preview.innerHTML = "";
+        // preview.appendChild(previewImg);
+        preview.src = fileName
+    }
+    function drag() {
+        document.getElementById('uploadFile').parentNode.className = 'draging dragBox';
+    }
+    function drop() {
+        document.getElementById('uploadFile').parentNode.className = 'dragBox';
+    }
+</script>
+
+</html>

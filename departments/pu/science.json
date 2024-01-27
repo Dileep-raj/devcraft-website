@@ -1,0 +1,60 @@
+{
+    "staffs": {
+        "Kartik Ankar": {
+            "profile-img": "science/Kartik Ankar.png",
+            "education": "MSC, BED,(PHD) ",
+            "subject": "Chemistry",
+            "date-of-joining": "24/10/2009",
+            "experience": 15,
+            "extra": "Head of scouts and guides Dept.- Govt PU College Rajanukunte"
+        },
+        "N Veedavathi": {
+            "profile-img": "science/N Veedavathi.png",
+            "education": "MA, B.Ed",
+            "subject": "MATHEMATICS",
+            "date-of-joining": "02-05-2011",
+            "experience": 13,
+            "extra": "Head of Controller of Examination (COE) GHS Rajanukunte"
+        },
+        "Jayaramareddy R": {
+            "profile-img": "science/Jayaramareddy R.png",
+            "education": "M.Sc, B.Ed",
+            "subject": "PHYSICS",
+            "date-of-joining": "28/06/2013",
+            "experience": 11,
+            "extra": "Head of Bharat Seva Dal Dept.- Govt PU College Rajanukunte"
+        },
+        "V Lokeshwari": {
+            "profile-img": "science/V Lokeshwari.png",
+            "education": "M.Sc, B.Ed",
+            "subject": "BIOLOGY",
+            "date-of-joining": "28/06/2013",
+            "experience": 11,
+            "extra": "Head of Eco Club Dept.- Govt PU College Rajanukunte"
+        },
+        "Bhoomika C M": {
+            "profile-img": "",
+            "education": "BE - Computer Science",
+            "subject": "Computer Science",
+            "date-of-joining": "",
+            "experience": 5,
+            "extra": ""
+        },
+        "H Hussensabi": {
+            "profile-img": "science/H Hussensabi.png",
+            "education": "MA, B.Ed",
+            "subject": "KANNADA",
+            "date-of-joining": "22/08/1998",
+            "experience": 26,
+            "extra": ""
+        },
+        "Padmashree K": {
+            "profile-img": "science/Padmashree K.png",
+            "education": "M.A, MPhil, NET, B.Ed",
+            "subject": "ENGLISH",
+            "date-of-joining": "01/07/2013",
+            "experience": 7,
+            "extra": ""
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "staffs": {
+        "Laxmi Prasad S B": {
+            "profile-img": "commerce/Laxmi Prasad S B.png",
+            "education": "M.Sc,B.Ed",
+            "subject": "HISTORY",
+            "date-of-joining": "19/07/1994",
+            "experience": 30,
+            "extra": "Head of Tourism Dept.- Govt PU College Rajanukunte"
+        },
+        "B R Shivanna": {
+            "profile-img": "",
+            "education": "MA, B.Ed",
+            "subject": "ECONOMICS",
+            "date-of-joining": "08/01/2018",
+            "experience": 6,
+            "extra": "Head of Library Dept. GHS Rajanukunte"
+        },
+        "Ashwathamma K T": {
+            "profile-img": "commerce/Ashwathamma K T.png",
+            "education": "M.Com ,B.Ed",
+            "subject": "ACCOUNTANCY &BUSI. STUDIES",
+            "date-of-joining": "06/02/2023",
+            "experience": 1
+        },
+        "Rakshit M V": {
+            "profile-img": "",
+            "education": "M.Com",
+            "subject": "Accountancy",
+            "date-of-joining": "",
+            "experience": 8
+        },
+        "Bhoomika C M": {
+            "profile-img": "",
+            "education": "BE - Computer Science",
+            "subject": "Computer Science",
+            "date-of-joining": "",
+            "experience": 5
+        }
+    }
+}
