@@ -10,19 +10,28 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <script src="../js/jQuery_3.7.1.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <style>
+        .display-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/primaryschool-bg.jpg") no-repeat;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="container">
-            <div class="h3">Primary School</div>
-
-        </div><br>
-
-        <div class="container">
-            <div class="h4">Staff details</div>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3" id="staffDetails"> </div>
+    <div class="container-fluid display-bg">
+        <div class="container text-center p-5">
+            <div class="display-5 m-3">Primary School</div>
+            <p>
+                The Government Primary School in Rajanakunte, Karnataka, traces its roots back to 1945. Nestled on a
+                3-acre expanse, it caters to students from Std 1 to 8. The medium of instruction for Std 1-5 is Kannada,
+                while for 6th-8th, it extends to both Kannada and English.
+            </p>
         </div>
+    </div><br>
+
+    <div class="container">
+        <div class="display-6 m-4 p-3 text-center">Staff details</div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3" id="staffDetails"> </div>
     </div>
 
     <script>

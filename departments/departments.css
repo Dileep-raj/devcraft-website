@@ -2,3 +2,19 @@
     object-fit: cover;
     aspect-ratio: 1;
 }
+
+.staff-card {
+    width: 85% !important;
+}
+
+.staff-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-bg {
+    background-size: cover !important;
+    background-position: center !important;
+    color: white !important;
+}

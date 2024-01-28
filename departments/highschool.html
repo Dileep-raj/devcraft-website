@@ -10,19 +10,27 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <script src="../js/jQuery_3.7.1.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <style>
+        .display-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/highschool-bg.jpg") no-repeat;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="container">
-            <div class="h3">High School</div>
-
-        </div><br>
-
-        <div class="container">
-            <div class="h4">Staff details</div>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3" id="staffDetails"> </div>
+    <div class="container-fluid display-bg">
+        <div class="container text-center p-5">
+            <div class="display-5 m-3">High School</div>
+            <p>
+                Established in 2009, the Government High School in Rajanakunte, Bangalore, Karnataka, sprawls across 4.5
+                acres. This institution provides education for 9th and 10th grades in both Kannada and English mediums.
+            </p>
         </div>
+    </div><br>
+
+    <div class="container">
+        <div class="display-6 m-4 p-3 text-center">Staff details</div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3" id="staffDetails"> </div>
     </div>
 
     <script>

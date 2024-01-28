@@ -6,7 +6,7 @@ function loadStaffDetails(staffsJSON) {
         const image = profileDetails["profile-img"], education = profileDetails["education"], subject = profileDetails["subject"]
         const date = profileDetails["date-of-joining"], experience = profileDetails["experience"], extra = profileDetails["extra"]
         const card = document.createElement("div");
-        card.className = "card h-100 staff-card"
+        card.className = "card h-100 staff-card "
         var cardInnerHTML = `
             <img class="card-img-top staff-profile-img" src="${image == "" ? "../blank.webp" : image}" alt="Staff Profile image">
             <div class="card-body">
@@ -23,7 +23,7 @@ function loadStaffDetails(staffsJSON) {
         card.innerHTML = cardInnerHTML
 
         const col = document.createElement("div")
-        col.className = "col"
+        col.className = "col staff-col"
         col.appendChild(card)
         staffDetails.appendChild(col)
     }
