@@ -1,17 +1,269 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx" class="no-js">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/bootstrap.bundle.min.js"></script>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/logo1.png">
+	<!-- Author Meta -->
+	<meta name="author" content="colorlib">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>Contact</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+	<!--
+			CSS
+			============================================= -->
+	<link rel="stylesheet" href="css/linearicons.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+	<header id="header" id="home">
+		<div class="container main-menu">
+			<div class="row align-items-center justify-content-between d-flex">
+				<div class="col-lg-3 col-md-1">
+					<div id="logo"> <a href="index.html"><img src="img/logo1.png" title="" /></a> </div>
+				</div>
 
+				<div class="col-lg-9 col-md-11 row justify-content-end">
+					<div class="col-12">
+						<nav id="nav-menu-container">
+							<ul class="nav-menu">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="admission.html">Admission</a></li>
+								<li class="menu-has-children"><a href="">Departments</a>
+									<ul>
+										<li><a href="departments/pu/index.html">PU College</a></li>
+										<li><a href="departments/highschool.html">High School</a></li>
+										<li><a href="departments/primaryschool.html">Primary School</a></li>
+									</ul>
+								</li>
+								<li><a href="facilities.html">Facilities</a></li>
+								<li><a href="gallery.html">Gallery</a> </li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</nav><!-- #nav-menu-container -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</header><!-- #header -->
+
+	<!-- start banner Area -->
+	<section class="banner-area relative about-banner" id="home">
+		<div class="overlay overlay-bg"></div>
+		<div class="container">
+			<div class="row d-flex align-items-center justify-content-center">
+				<div class="about-content col-lg-12">
+					<h1 class="text-white">
+						Contact Us
+					</h1>
+					<p class="text-white link-nav"><a href="index.html">Home </a> <span
+							class="lnr lnr-arrow-right"></span> <a href="contact.html"> Contact Us</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End banner Area -->
+
+	<!-- Start contact-page Area -->
+	<section class="contact-page-area section-gap">
+		<div class="container">
+			<div class="row">
+				<div class="map-wrap" style="width:100%; height: 445px;" id="map"></div>
+				<div class="col-lg-4 d-flex flex-column address-wrap">
+					<div class="single-contact-address d-flex flex-row">
+						<div class="icon">
+							<span class="lnr lnr-home"></span>
+						</div>
+						<div class="contact-details">
+							<h5>Rajanukunte, Bangalore</h5>
+							<p> 5HF5+FMP, Unnamed Road, Rajanukunte, bangalore ,Karnataka 560064. </p>
+						</div>
+					</div>
+					<div class="single-contact-address d-flex flex-row">
+						<div class="icon">
+							<span class="lnr lnr-phone-handset"></span>
+						</div>
+						<div class="contact-details">
+							<h5>+91 9342736575</h5>
+							<p>Govt PU college -
+								Mr Karthik Ankar</p>
+						</div>
+					</div>
+					<div class="single-contact-address d-flex flex-row">
+						<div class="icon">
+							<span class="lnr lnr-phone-handset"></span>
+						</div>
+						<div class="contact-details">
+							<h5>+91 9845917244
+							</h5>
+							<p>Govt High School -
+								Mr. Kantaraju B G</p>
+						</div>
+					</div>
+					<div class="single-contact-address d-flex flex-row">
+						<div class="icon">
+							<span class="lnr lnr-phone-handset"></span>
+						</div>
+						<div class="contact-details">
+							<h5>+91 7204602103
+							</h5>
+							<p>Govt Primary School-
+								Mr Shreenivasa G</p>
+						</div>
+					</div>
+					<div class="single-contact-address d-flex flex-row">
+						<div class="icon">
+							<span class="lnr lnr-phone-handset"></span>
+						</div>
+						<div class="contact-details">
+							<h5>+91 9901773645
+							</h5>
+							<p>BOG -
+								Mr. Rajendra Kumar R C
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<form class="form-area contact-form text-right" id="myForm" action="mail.php" method="post">
+						<div class="row">
+							<div class="col-lg-6 form-group">
+								<input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''"
+									onblur="this.placeholder = 'Enter your name'"
+									class="common-input mb-20 form-control" required="" type="text">
+
+								<input name="email" placeholder="Enter email address"
+									pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'"
+									class="common-input mb-20 form-control" required="" type="email">
+
+								<input name="subject" placeholder="Enter subject" onfocus="this.placeholder = ''"
+									onblur="this.placeholder = 'Enter subject'" class="common-input mb-20 form-control"
+									required="" type="text">
+							</div>
+							<div class="col-lg-6 form-group">
+								<textarea class="common-textarea form-control" name="message"
+									placeholder="Enter Messege" onfocus="this.placeholder = ''"
+									onblur="this.placeholder = 'Enter Messege'" required=""></textarea>
+							</div>
+							<div class="col-lg-12">
+								<div class="alert-msg" style="text-align: left;"></div>
+								<button class="genric-btn primary" style="float: right;">Send Message</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End contact-page Area -->
+
+	<!-- start footer Area -->
+	<footer class="footer-area section-gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<h4>Quick links</h4>
+						<ul>
+							<li><a href="../about.html">About</a></li>
+							<li><a href="../academics.html">Academics</a></li>
+							<li><a href="index.html">Departments</a></li>
+							<li><a href="../facilities.html">Facilities</a></li>
+							<li><a href="../gallery.html">Gallery</a> </li>
+							<li><a href="../contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<h4>Resources</h4>
+						<ul>
+							<li><a href="#">Guides</a></li>
+							<li><a href="#">Research</a></li>
+							<li><a href="#">Experts</a></li>
+							<li><a href="#">Agencies</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-lg-3  col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<h4> Contact : </h4>
+						<ul>
+							<li class="p-1">
+								Govt PU college <br> Mr Karthik Ankar - <a href="tel:+91 9342736575"> 9342736575 </a>
+							</li>
+
+							<li class="p-1">
+								Govt High School <br> Mr. Kantaraju B G - <a href="tel:+91 9845917244"> 9845917244 </a>
+							</li>
+
+							<li class="p-1">
+								Govt Primary School <br> Mr Shreenivasa G - <a href="tel:+91 7204602103"> 7204602103
+								</a>
+							</li>
+
+							<li class="p-1">
+								BOG <br> Mr. Rajendra Kumar R C- <a href="tel:+91 9901773645">9901773645</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-lg-3  col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<h4> Reach Us </h4>
+						<div>
+							5HF5+FMP <br> Rajanukunte <br> Bangalore <br> Karnataka 560064.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End footer Area -->
+
+	<script>
+		// JavaScript code to scroll to the top of the page on refresh
+		window.onbeforeunload = function () {
+			window.scrollTo(0, 0);
+		};
+	</script>
+	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+	<script src="js/easing.min.js"></script>
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/jquery.tabs.min.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/mail-script.js"></script>
+	<script src="js/main.js"></script>
 </body>
 
 </html>
