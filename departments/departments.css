@@ -1,3 +1,14 @@
+/* Background image */
+.display-bg {
+    padding-top: 89px;
+    background-size: cover !important;
+    background-position: center !important;
+    color: white !important;
+}
+
+
+
+/* Staff details css */
 .staff-profile-img {
     object-fit: cover;
     aspect-ratio: 1;
@@ -13,8 +24,30 @@
     justify-content: center;
 }
 
-.display-bg {
-    background-size: cover !important;
-    background-position: center !important;
-    color: white !important;
+.staff-details-area {
+    margin-bottom: 5%;
+}
+
+
+
+/* Departments card css */
+.departments-card {
+    width: 85% !important;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.departments-card-col {
+    display: flex;
+    justify-content: center;
+}
+
+.departments-img-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.departments-img-overlay>.card-text {
+    font-size: 11pt;
 }

@@ -12,6 +12,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/linearicons.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+    <link rel="stylesheet" href="../css/nice-select.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/owl.carousel.css">
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+    <link rel="stylesheet" href="css/common.css">
+
     <style>
         .body {
             color: #fff9db;
@@ -35,17 +48,61 @@
             background: linear-gradient(to right, #3E5151, #DECBA4);
             clip-path: polygon(0% 0%, 75% 0%, 88% 52%, 75% 100%, 0% 100%);
             padding: 1rem 5rem;
-            width: 80%;
+            width: 50%;
             position: relative;
             left: 0;
             color: white;
             font-size: 30px;
             font-family: 'DM Serif Display', serif;
         }
+
+        @media screen and (max-width: 600px) {
+            .container_1 {
+                width: 70%;
+            }
+        }
+
+        .display-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("gallery/gallery_coverphoto.jpg") center/cover no-repeat;
+            background-position: 50% 30%;
+        }
     </style>
 </head>
 
 <body>
+    <header id="header" id="home" class="header-dark">
+        <div class="container main-menu">
+            <div class="row align-items-center justify-content-between d-flex">
+                <div class="col-lg-3 col-md-1">
+                    <div id="logo"> <a href="index.html"><img src="logo.jpeg" /></a> </div>
+                </div>
+
+                <div class="col-lg-9 col-md-11 row justify-content-end">
+                    <div class="col-12">
+                        <nav id="nav-menu-container">
+                            <ul class="nav-menu">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="admission.html">Admission</a></li>
+                                <li class="menu-has-children"><a href="">Departments</a>
+                                    <ul>
+                                        <li><a href="pu/index.html">PU College</a></li>
+                                        <li><a href="departments/highschool.html">High School</a></li>
+                                        <li><a href="departments/primaryschool.html">Primary School</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="facilities.html">Facilities</a></li>
+                                <li><a href="gallery.html">Gallery</a> </li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav><!-- #nav-menu-container -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header><!-- #header -->
+    
+    <div class="header-gap"></div>
     <div class="container_1">
         <p>Gallery</p>
     </div>
@@ -88,11 +145,13 @@
             </div>
         </div>
     </div>
+    
     <div class="container_1"
-        style="width:50%; background: rgb(2,0,36);
+        style=" background: rgb(2,0,36);
         background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(130,36,51,1) 28%);clip-path: polygon(100% 1%, 94% 55%, 100% 100%, 0 100%, 0 0);">
         <p>Sports</p>
     </div>
+    
     <div class="card-columns">
         <div class="card">
             <img class="card-img-top" src="gallery/gallery_sport_1.png" alt="Card image cap">
@@ -113,11 +172,13 @@
             <img class="card-img-top" src="gallery/gallery_sport_4.png" alt="Card image cap">
         </div>
     </div>
+
     <div class="container_1"
-        style="width:50%; background: rgb(2,0,36);
+        style="background: rgb(2,0,36);
         background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(130,36,51,1) 28%);clip-path: polygon(100% 1%, 94% 55%, 100% 100%, 0 100%, 0 0);">
         <p>Academic Excellance</p>
     </div>
+    
     <div class="card-columns">
         <div class="card">
             <img class="card-img-top" src="gallery/gallery_ac1.png" alt="Card image cap">
@@ -147,11 +208,13 @@
             <img class="card-img-top" src="gallery/gallery_ac5.png" alt="Card image cap">
         </div>
     </div>
+    
     <div class="container_1"
-        style="width:50%; background: rgb(2,0,36);
+        style="background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(130,36,51,1) 28%);clip-path: polygon(100% 1%, 94% 55%, 100% 100%, 0 100%, 0 0);">
         <p>Cultural Activities</p>
     </div>
+    
     <div class="card-columns">
         <div class="card">
             <img class="card-img-top" src="gallery/gallery_ca1.png" alt="Card image cap">
@@ -175,11 +238,13 @@
             <img class="card-img-top" src="gallery/gallery_ca6.png" alt="Card image cap">
         </div>
     </div>
+    
     <div class="container_1"
-        style="width:50%; background: rgb(2,0,36);
+        style="background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(130,36,51,1) 28%);clip-path: polygon(100% 1%, 94% 55%, 100% 100%, 0 100%, 0 0);">
         <p>Others</p>
     </div>
+    
     <div class="card-columns">
         <div class="card">
             <img class="card-img-top" src="gallery/gallery_oth.png" alt="Card image cap">
@@ -200,6 +265,84 @@
             <img class="card-img-top" src="gallery/gallery_oth1.png" alt="Card image cap">
         </div>
     </div>
+
+
+    <!-- start footer Area -->
+    <footer class="footer-area section-gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h4>Quick links</h4>
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="academics.html">Academics</a></li>
+                            <li><a href="departments/index.html">Departments</a></li>
+                            <li><a href="facilities.html">Facilities</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4  col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h4> Reach Us </h4>
+                        <div>
+                            5HF5+FMP <br> Rajanukunte <br> Bangalore <br> Karnataka 560064.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4  col-md-12 col-sm-12">
+                    <div class="single-footer-widget">
+                        <h4> Contact : </h4>
+                        <ul>
+                            <li class="p-1">
+                                Govt PU college <br> Mr Karthik Ankar - <a href="tel:+91 9342736575"> 9342736575 </a>
+                            </li>
+
+                            <li class="p-1">
+                                Govt High School <br> Mr. Kantaraju B G - <a href="tel:+91 9845917244"> 9845917244 </a>
+                            </li>
+
+                            <li class="p-1">
+                                Govt Primary School <br> Mr Shreenivasa G - <a href="tel:+91 7204602103"> 7204602103
+                                </a>
+                            </li>
+
+                            <li class="p-1">
+                                BOG <br> Mr. Rajendra Kumar R C- <a href="tel:+91 9901773645">9901773645</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer Area -->
+
+    <script>
+        // JavaScript code to scroll to the top of the page on refresh
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        };
+    </script>
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+    <script src="js/easing.min.js"></script>
+    <script src="js/hoverIntent.js"></script>
+    <script src="js/superfish.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.tabs.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

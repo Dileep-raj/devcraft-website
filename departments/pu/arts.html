@@ -15,9 +15,55 @@
             background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/college-bg.jpg") no-repeat;
         }
     </style>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/linearicons.css">
+    <link rel="stylesheet" href="../../css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="../../css/bootstrap.css"> -->
+    <link rel="stylesheet" href="../../css/magnific-popup.css">
+    <link rel="stylesheet" href="../../css/nice-select.css">
+    <link rel="stylesheet" href="../../css/animate.min.css">
+    <link rel="stylesheet" href="../../css/owl.carousel.css">
+    <link rel="stylesheet" href="../../css/jquery-ui.css">
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <link rel="stylesheet" href="../../css/common.css">
 </head>
 
 <body>
+    <header id="header" id="home">
+        <div class="container main-menu">
+            <div class="row align-items-center justify-content-between d-flex">
+                <div class="col-lg-3 col-md-1">
+                    <div id="logo"> <a href="../../index.html"><img src="../../logo.jpeg" /></a> </div>
+                </div>
+
+                <div class="col-lg-9 col-md-11 row justify-content-end">
+                    <div class="col-12">
+                        <nav id="nav-menu-container">
+                            <ul class="nav-menu">
+                                <li><a href="../../index.html">Home</a></li>
+                                <li><a href="../../about.html">About</a></li>
+                                <li><a href="../../admission.html">Admission</a></li>
+                                <li class="menu-has-children"><a href="../index.html">Departments</a>
+                                    <ul>
+                                        <li><a href="index.html">PU College</a></li>
+                                        <li><a href="../highschool.html">High School</a></li>
+                                        <li><a href="../primaryschool.html">Primary School</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../../facilities.html">Facilities</a></li>
+                                <li><a href="../../gallery.html">Gallery</a> </li>
+                                <li><a href="../../contact.html">Contact</a></li>
+                            </ul>
+                        </nav><!-- #nav-menu-container -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header><!-- #header -->
+
     <div class="container-fluid display-bg">
         <div class="container text-center p-5">
             <div class="display-5 m-3">ARTS</div>
@@ -30,7 +76,7 @@
         </div>
     </div><br>
 
-    <div class="container">
+    <div class="container staff-details-area">
         <div class="display-6 m-4 p-3 text-center">Staff details</div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3" id="staffDetails"> </div>
     </div>
@@ -47,6 +93,83 @@
         )
     </script>
     <script src="../staff-details.js"></script>
+
+    <!-- start footer Area -->
+    <footer class="footer-area section-gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h4>Quick links</h4>
+                        <ul>
+                            <li><a href="../../about.html">About</a></li>
+                            <li><a href="../../academics.html">Academics</a></li>
+                            <li><a href="../index.html">Departments</a></li>
+                            <li><a href="../../facilities.html">Facilities</a></li>
+                            <li><a href="../../contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4  col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h4> Reach Us </h4>
+                        <div>
+                            5HF5+FMP <br> Rajanukunte <br> Bangalore <br> Karnataka 560064.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4  col-md-12 col-sm-12">
+                    <div class="single-footer-widget">
+                        <h4> Contact : </h4>
+                        <ul>
+                            <li class="p-1">
+                                Govt PU college <br> Mr Karthik Ankar - <a href="tel:+91 9342736575"> 9342736575 </a>
+                            </li>
+
+                            <li class="p-1">
+                                Govt High School <br> Mr. Kantaraju B G - <a href="tel:+91 9845917244"> 9845917244 </a>
+                            </li>
+
+                            <li class="p-1">
+                                Govt Primary School <br> Mr Shreenivasa G - <a href="tel:+91 7204602103"> 7204602103
+                                </a>
+                            </li>
+
+                            <li class="p-1">
+                                BOG <br> Mr. Rajendra Kumar R C- <a href="tel:+91 9901773645">9901773645</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer Area -->
+
+    <script>
+        // JavaScript code to scroll to the top of the page on refresh
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        };
+    </script>
+    <script src="../../js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="../../js/vendor/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+    <script src="../../js/easing.min.js"></script>
+    <script src="../../js/hoverIntent.js"></script>
+    <script src="../../js/superfish.min.js"></script>
+    <script src="../../js/jquery.ajaxchimp.min.js"></script>
+    <script src="../../js/jquery.magnific-popup.min.js"></script>
+    <script src="../../js/jquery.tabs.min.js"></script>
+    <script src="../../js/jquery.nice-select.min.js"></script>
+    <script src="../../js/owl.carousel.min.js"></script>
+    <script src="../../js/mail-script.js"></script>
+    <script src="../../js/main.js"></script>
 </body>
 
 </html>
