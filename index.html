@@ -6,7 +6,7 @@
     <!-- Mobile Specific Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon-->
-    <link rel="shortcut icon" href="img/logo1.png" sizes="32x32">
+    <link rel="shortcut icon" href="logo.jpeg" sizes="32x32">
 
     <!-- Author Meta -->
     <meta name="author" content="">
@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/linearicons.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/nice-select.css">
     <link rel="stylesheet" href="css/animate.min.css">
@@ -36,25 +36,30 @@
         #header {
             margin-bottom: 0;
         }
-        
+
+        #logo a img {
+            aspect-ratio: 1;
+            object-fit: cover;
+            height: 100%;
+            width: 3rem;
+        }
+
         .banner-area {
-            /* height: 160vh; */
             position: relative;
             margin-top: -60px;
-            /* Adjusted to overlap with the header */
             padding-top: 60px;
         }
-        
+
         .banner-content {
             text-align: left;
             color: white;
         }
-        
+
         .banner-content h2 {
             font-size: 2em;
             color: whitesmoke;
         }
-        
+
         .banner-content p {
             font-size: 1em;
             color: white !important;
@@ -72,15 +77,12 @@
             .banner-content p {
                 font-size: 0.7em;
                 margin-bottom: 15px;
-                /* Adjust margin for smaller screens */
             }
 
             .banner-area {
                 padding-top: 150px;
-                /* height: 150vh; */
             }
         }
-
 
         @media (max-width: 575px) {
 
@@ -88,7 +90,6 @@
             .banner-content p {
                 font-size: 1em;
                 margin-bottom: 10px;
-                /* Adjust margin for even smaller screens */
             }
         }
     </style>
@@ -99,7 +100,7 @@
         <div class="container main-menu">
             <div class="row align-items-center justify-content-between d-flex">
                 <div class="col-lg-3 col-md-1">
-                    <div id="logo"> <a href="index.html"><img src="img/logo1.png" title="" /></a> </div>
+                    <div id="logo"> <a href="index.html"><img src="logo.jpeg" /></a> </div>
                 </div>
 
                 <div class="col-lg-9 col-md-11 row justify-content-end">
@@ -112,8 +113,8 @@
                                 <li class="menu-has-children"><a href="">Departments</a>
                                     <ul>
                                         <li><a href="pu/index.html">PU College</a></li>
-                                        <li><a href="highschool.html">High School</a></li>
-                                        <li><a href="primaryschool.html">Primary School</a></li>
+                                        <li><a href="departments/highschool.html">High School</a></li>
+                                        <li><a href="departments/primaryschool.html">Primary School</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="facilities.html">Facilities</a></li>
@@ -188,7 +189,7 @@
             <div class="row d-flex justify-content-center">
                 <div class="menu-content pb-70 col-lg-8">
                     <div class="title text-center">
-                        <h1 class="mb-10">keep Learning throughout your life</h1>
+                        <h1 class="mb-10">Keep learning throughout your life</h1>
                         <p>There is a moment in the life of any aspiring.</p>
                     </div>
                 </div>
@@ -591,31 +592,29 @@
 						</ul>
 					</div>
 				</div> -->
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="single-footer-widget">
                         <h4>Quick links</h4>
                         <ul>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Academics</a></li>
-                            <li><a href="#">Departments</a></li>
-                            <li><a href="#">Facilities</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-footer-widget">
-                        <h4>Resources</h4>
-                        <ul>
-                            <li><a href="#">Guides</a></li>
-                            <li><a href="#">Research</a></li>
-                            <li><a href="#">Experts</a></li>
-                            <li><a href="#">Agencies</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="academics.html">Academics</a></li>
+                            <li><a href="departments/index.html">Departments</a></li>
+                            <li><a href="facilities.html">Facilities</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="col-lg-3  col-md-6 col-sm-6">
+                <div class="col-lg-4  col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h4> Reach Us </h4>
+                        <div>
+                            5HF5+FMP <br> Rajanukunte <br> Bangalore <br> Karnataka 560064.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4  col-md-12 col-sm-12">
                     <div class="single-footer-widget">
                         <h4> Contact : </h4>
                         <ul>
@@ -636,15 +635,6 @@
                                 BOG <br> Mr. Rajendra Kumar R C- <a href="tel:+91 9901773645">9901773645</a>
                             </li>
                         </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-3  col-md-6 col-sm-6">
-                    <div class="single-footer-widget">
-                        <h4> Reach Us </h4>
-                        <div>
-                            5HF5+FMP <br> Rajanukunte <br> Bangalore <br> Karnataka 560064.
-                        </div>
                     </div>
                 </div>
             </div>
