@@ -1,30 +1,23 @@
 <!DOCTYPE html>
-<html lang="zxx" class="no-js">
+<html lang="en">
 
 <head>
-
-    <!-- Mobile Specific Meta -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Favicon-->
-    <link rel="shortcut icon" href="logo.jpeg" sizes="32x32">
-
-    <!-- Author Meta -->
-    <meta name="author" content="">
-    <!-- Meta Description -->
-    <meta name="description" content="">
-    <!-- Meta Keyword -->
-    <meta name="keywords" content="">
-    <!-- meta character set -->
     <meta charset="UTF-8">
-    <!-- Site Title -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Academics</title>
+    <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
+
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="css/linearicons.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/nice-select.css">
     <link rel="stylesheet" href="css/animate.min.css">
@@ -32,132 +25,280 @@
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/main.css">
 
+    <link rel="stylesheet" href="css/common.css">
     <style>
-        #header {
-            margin-bottom: 0;
+        .btn.btn-link {
+            text-decoration: none;
+            font-family: 'Mukta', sans-serif;
+            font-size: large;
         }
 
-        #logo a img {
-            aspect-ratio: 1;
-            object-fit: cover;
-            height: 100%;
-            width: 3rem;
+        h5 {
+            color: grey;
+            font-size: 30px;
         }
 
-        .banner-area {
-            position: relative;
-            margin-top: -60px;
-            padding-top: 60px;
-        }
-
-        .banner-content {
-            text-align: left;
-            color: white;
-        }
-
-        .banner-content h2 {
-            font-size: 2em;
-            color: whitesmoke;
-        }
-
-        .banner-content p {
-            font-size: 1em;
-            color: white !important;
-            /* color: rgba(255, 255, 255, 0.3); */
-        }
-
-        #mobile-nav-toggle {
-            top: 27px !important;
-        }
-
-        /* Responsive styles for smaller screens */
-        @media (max-width: 767px) {
-
-            .banner-content h2,
-            .banner-content p {
-                font-size: 0.7em;
-                margin-bottom: 15px;
-            }
-
-            .banner-area {
-                padding-top: 150px;
-            }
-        }
-
-        @media (max-width: 575px) {
-
-            .banner-content h2,
-            .banner-content p {
-                font-size: 1em;
-                margin-bottom: 10px;
-            }
+        .timetable {
+            color: black !important;
         }
     </style>
 </head>
 
 <body>
-    <header id="header" id="home">
+    <header id="header" id="home" class="header-dark">
         <div class="container main-menu">
             <div class="row align-items-center justify-content-between d-flex">
                 <div class="col-lg-3 col-md-1">
                     <div id="logo"> <a href="index.html"><img src="logo.jpeg" /></a> </div>
                 </div>
 
-                <div class="col-lg-9 col-md-11 row justify-content-end">
-                    <div class="col-12">
-                        <nav id="nav-menu-container">
-                            <ul class="nav-menu">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="admission.html">Admission</a></li>
-                                <li class="menu-has-children"><a href="">Departments</a>
-                                    <ul>
-                                        <li><a href="pu/index.html">PU College</a></li>
-                                        <li><a href="departments/highschool.html">High School</a></li>
-                                        <li><a href="departments/primaryschool.html">Primary School</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="facilities.html">Facilities</a></li>
-                                <li><a href="gallery.html">Gallery</a> </li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </nav><!-- #nav-menu-container -->
-                    </div>
+                <div class="col-lg-9 col-md-11">
+                    <nav id="nav-menu-container">
+                        <ul class="nav-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="academics.html">Academics</a></li>
+                            <li><a href="admission.html">Admission</a></li>
+                            <li class="menu-has-children"><a href="departments/index.html">Departments</a>
+                                <ul>
+                                    <li><a href="departments/pu/index.html">PU College</a></li>
+                                    <li><a href="departments/highschool.html">High School</a></li>
+                                    <li><a href="departments/primaryschool.html">Primary School</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="facilities.html">Facilities</a></li>
+                            <li><a href="gallery.html">Gallery</a> </li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav><!-- #nav-menu-container -->
                 </div>
             </div>
         </div>
     </header><!-- #header -->
 
+    <div class="header-gap"></div>
+    <h1 class="main-heading">Academic Overview</h1>
 
+    <div class="container">
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    <button class="btn btn-link "> Government Pre-University College </button>
+                </div>
 
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        Government Pre-University (PU) colleges in Karnataka play a vital role in shaping the academic
+                        journey of students transitioning from secondary to higher secondary education. Following the
+                        state board curriculum, these institutions provide a comprehensive education that spans classes
+                        11 and 12, known as the Pre-University Course (PUC). The medium of instruction in these colleges
+                        includes Kannada and English, catering to the linguistic diversity of the state. The academic
+                        focus encompasses a range of subjects, with a strong emphasis on core disciplines like
+                        mathematics, science, and social studies.
+                        One of the significant milestones in the academic journey of students in PU colleges is the
+                        board examination at the end of the PUC. This examination, often known as the PUC Board Exam,
+                        holds great importance as it serves as a crucial determinant for further education and career
+                        pursuits. Students are evaluated based on their performance in subjects relevant to their chosen
+                        streams - Science, Commerce, or Arts.
+                        Government initiatives in Karnataka play a key role in supporting education in PU colleges.
+                        Schemes such as scholarships aim to financially assist students, ensuring that economic
+                        constraints do not hinder their educational progress. Additionally, mid-day meal programs
+                        contribute to the overall well-being of students, fostering an environment conducive to
+                        learning. The government also invests in infrastructure development, creating conducive spaces
+                        for academic activities.
+                        Vocational education is an integral part of the PU college curriculum, designed to enhance
+                        practical skills and employability. This initiative aligns with the broader goal of preparing
+                        students for both higher education and the professional world. It reflects a holistic approach
+                        to education, acknowledging the diverse aspirations and career paths that students may pursue.
+                        To obtain the latest and specific details about the academic offerings, admission processes, and
+                        other relevant information in Government Pre-University Colleges in Karnataka, it is recommended
+                        to refer to official sources such as the Karnataka State Education Department or the respective
+                        college authorities.
+                    </div>
+                </div>
+            </div>
 
+            <div class="card">
+                <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="false" aria-controls="collapseTwo">
+                    <button class="btn btn-link collapsed"> Government Schools in Karnataka </button>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        Government schools in Karnataka form the foundation of a student's educational journey,
+                        providing primary and secondary education. The academic structure typically consists of primary
+                        classes (1-5), middle school (6-8), and high school (9-10). Kannada is the primary medium of
+                        instruction, but English is also widely used, especially in urban areas and private schools,
+                        contributing to linguistic diversity. The curriculum is based on the Karnataka State Board
+                        syllabus, covering languages, mathematics, science, social studies, and vocational subjects.
+                        One significant aspect of government school education is the Secondary School Leaving
+                        Certificate (SSLC) examination at the end of class 10. This examination serves as a crucial
+                        evaluation point, determining a student's eligibility for further education. Government
+                        initiatives, such as scholarship programs, aim to alleviate financial constraints and promote
+                        access to education.
+                        The state government actively invests in improving the quality of education in government
+                        schools. Initiatives include the provision of mid-day meals to ensure proper nutrition,
+                        infrastructure development to create conducive learning environments, and schemes to enhance the
+                        overall educational experience. Additionally, efforts are made to integrate vocational education
+                        into the curriculum, preparing students for practical skills and future employment
+                        opportunities.
+
+                        For the most accurate and up-to-date information regarding admission procedures, academic
+                        offerings, and other specific details about government schools in Karnataka, individuals are
+                        advised to consult official sources such as the Karnataka State Education Department or contact
+                        the respective schools directly.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="timetable text-black">
+            <div class="row mt-5 text-center">
+                <h5 class="display-6 mt-3 text-black">Timetable</h5>
+                <div class="col-lg-12 mt-3">
+                    <div class="m-3 lead">PU College</div>
+                    <img src="timetable/pu.jpg" alt="image" class="img-fluid">
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 mt-3">
+                    <div class="m-3 lead">High School</div>
+                    <img src="timetable/high.jpg" alt="image" class="img-fluid">
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 mt-3">
+                    <div class="m-3 lead">Primary College</div>
+                    <img src="timetable/primary.png" alt="image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+        <div class="row m-5">
+            <div class="col-lg-12">
+                <h5 class="display-6 text-center m-3 text-black">Scholarship</h5>
+            </div>
+            <div id="accordion2">
+                <div class="card">
+                    <div class="card-header" id="scholarship1" data-toggle="collapse" data-target="#ssp"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        <button class="btn btn-link"> SSP </button>
+                    </div>
+
+                    <div id="ssp" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion2">
+                        <div class="card-body">
+                            The objective of the SSP Scholarship is to strengthen the education of students of the state
+                            and ensure a high literacy rate. The SSP scholarship program includes assistance to the
+                            primary, secondary and vocational levels of education, generating more efficiency among the
+                            youth.The students who are pursuing intermediate education or
+                            vocational/technical courses can apply for the same.<br>
+                            <a href="https://ssp.postmatric.karnataka.gov.in" style="text-decoration: none;">
+                                SSP(Apply here)</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="scholarship2" data-toggle="collapse" data-target="#nsp"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                        <button class="btn btn-link collapsed"> NSP </button>
+                    </div>
+                    <div id="nsp" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion2">
+                        <div class="card-body">
+                            <p>National Scholarship Portal (NSP) is a digital platform that carries scholarships offered
+                                by the central government, state governments and different government agencies like
+                                University Grants Commission (UGC). The NSP Portal is taken as a Mission Mode Project
+                                under National e-Governance Plan (NeGP).</p>
+                            <p>The National Scholarship Portal covers all types of scholarships for Class 1 to PhD
+                                level
+                                students. The NSP Portal manages various services like verifying student
+                                applications,
+                                providing application receipts, processing the application, and sanctioning and
+                                disbursal of
+                                scholarship amount to the beneficiaries.</p>
+                            <a href="https://scholarships.gov.in" style="text-decoration: none;">NSP(Apply
+                                here)</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="scholarship3" data-toggle="collapse" data-target="#lc"
+                        aria-expanded="false" aria-controls="collapseThree">
+                        <button class="btn btn-link collapsed"> Lions club Scholarship </button>
+                    </div>
+                    <div id="lc" class="collapse" aria-labelledby="headingThree" data-parent="#accordion2">
+                        <div class="card-body">
+                            <p>The Lions Clubs is a service organization that does volunteering and fundraising
+                                efforts
+                                to give back to those in their communities who need a bit of extra help. Moreover,
+                                they
+                                provide an amazing Lions Club Scholarship that allows individuals to attend school
+                                without as much of a financial worry.</p>
+                            <a href="https://www.lionsclubs.org/en/start-our-approach/grant-types"
+                                style="text-decoration: none;">Lions club(Apply
+                                here)</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="scholarship4" data-toggle="collapse" data-target="#gs"
+                        aria-expanded="false" aria-controls="collapseThree">
+                        <button class="btn btn-link collapsed"> Grama Panchayat Scholarships </button>
+                    </div>
+                    <div id="gs" class="collapse" aria-labelledby="headingThree" data-parent="#accordion2">
+                        <div class="card-body">
+                            <p>SC ST OBC Scholarship is run by the Government of India and the state governments to
+                                help
+                                students pursue their studies at different levels. The centrally-funded scholarships
+                                are
+                                sponsored by the Government of India and disbursed by different states while the
+                                state-funded scholarships are sponsored and disbursed by respective state
+                                governments
+                                only. An SC ST OBC Scholarship offers suitable financial assistance to SC/ST/OBC
+                                candidates at both pre-matric and post-matric levels of study.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // JavaScript code to scroll to the top of the page on refresh
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="js/easing.min.js"></script>
+    <script src="js/hoverIntent.js"></script>
+    <script src="js/superfish.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.tabs.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/main.js"></script>
 
     <!-- start footer Area -->
     <footer class="footer-area section-gap">
         <div class="container">
             <div class="row">
-                <!-- <div class="col-lg-2 col-md-6 col-sm-6">
-					<div class="single-footer-widget">
-						<h4>Top Products</h4>
-						<ul>
-							<li><a href="#">Managed Website</a></li>
-							<li><a href="#">Manage Reputation</a></li>
-							<li><a href="#">Power Tools</a></li>
-							<li><a href="#">Marketing Service</a></li>
-						</ul>
-					</div>
-				</div> -->
-                <!-- <div class="col-lg-2 col-md-6 col-sm-6">
-					<div class="single-footer-widget">
-						<h4>Links</h4>
-						<ul>
-							<li><a href="#">Jobs</a></li>
-							<li><a href="#">Brand Assets</a></li>
-							<li><a href="#">Investor Relations</a></li>
-							<li><a href="#">Terms of Service</a></li>
-						</ul>
-					</div>
-				</div> -->
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="single-footer-widget">
                         <h4>Quick links</h4>
@@ -207,29 +348,6 @@
         </div>
     </footer>
     <!-- End footer Area -->
-
-    <script>
-        // JavaScript code to scroll to the top of the page on refresh
-        window.onbeforeunload = function () {
-            window.scrollTo(0, 0);
-        };
-    </script>
-    <script src="js/vendor/jquery-2.2.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-    <script src="js/easing.min.js"></script>
-    <script src="js/hoverIntent.js"></script>
-    <script src="js/superfish.min.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.tabs.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/mail-script.js"></script>
-    <script src="js/main.js"></script>
 </body>
 
-</html
+</html>

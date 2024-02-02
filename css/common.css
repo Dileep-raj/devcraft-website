@@ -1,3 +1,4 @@
+/* Header css */
 #header {
     margin-bottom: 0;
 }
@@ -6,17 +7,29 @@
     background-color: rgba(4, 9, 30, 0.9);
 }
 
-.header-gap{
+.header-gap {
     padding-top: 89px;
 }
 
+/* Heading css */
+.main-heading{
+    padding: 90px 0px;
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Logo css */
 #logo a img {
     aspect-ratio: 1;
-    object-fit: cover;
+    border-radius: 50%;
+    object-fit: contain;
+    background-color: black;    
     height: 100%;
     width: 3rem;
 }
 
+/* Banner css */
 .banner-area {
     position: relative;
     margin-top: -60px;
@@ -39,9 +52,26 @@
     /* color: rgba(255, 255, 255, 0.3); */
 }
 
+/* Carousel css */
+.single-popular-carusel .img-fluid{
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+
+/* Nav css */
 #mobile-nav-toggle {
     top: 27px !important;
 }
+
+
+/* About page css */
+.about-img {
+    aspect-ratio: 1;
+    object-fit: cover !important;
+    width: 100%;
+    height: auto;
+}
+
 
 /* Responsive styles for smaller screens */
 @media (max-width: 767px) {

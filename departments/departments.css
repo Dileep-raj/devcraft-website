@@ -34,18 +34,30 @@
 .departments-card {
     width: 85% !important;
     align-items: center;
-    margin-top: 5%;
-    margin-bottom: 5%;
 }
-
-.departments-card-col {
+.departments-card-col{
     display: flex;
     justify-content: center;
+    margin-top: 1rem !important;
 }
 
 .departments-img-overlay {
-    background-color: rgba(0, 0, 0, 0.5);
     color: white;
+}
+
+#pu-card {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/college-bg.jpg") no-repeat;
+    background-size: cover;
+}
+
+#highschool-card {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/highschool-bg.jpg") no-repeat;
+    background-size: cover;
+}
+
+#primary-card {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/primaryschool-bg.jpg") no-repeat;
+    background-size: cover;
 }
 
 .departments-img-overlay>.card-text {

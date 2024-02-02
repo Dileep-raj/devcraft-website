@@ -15,7 +15,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/linearicons.css">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="../css/bootstrap.css"> -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/magnific-popup.css">
     <link rel="stylesheet" href="../css/nice-select.css">
     <link rel="stylesheet" href="../css/animate.min.css">
@@ -40,8 +40,9 @@
                             <ul class="nav-menu">
                                 <li><a href="../index.html">Home</a></li>
                                 <li><a href="../about.html">About</a></li>
+                                <li><a href="../academics.html">Academics</a></li>
                                 <li><a href="../admission.html">Admission</a></li>
-                                <li class="menu-has-children"><a href="">Departments</a>
+                                <li class="menu-has-children"><a href="index.html">Departments</a>
                                     <ul>
                                         <li><a href="pu/index.html">PU College</a></li>
                                         <li><a href="highschool.html">High School</a></li>
@@ -58,18 +59,17 @@
             </div>
         </div>
     </header><!-- #header -->
-    <div class="display-bg"></div>
+    <div class="header-gap"></div>
 
     <div class="container-fluid">
 
-        <h2 class="text-center m-5">Departments</h2>
+        <h1 class="main-heading">Departments</h1>
 
-        <div class="row row-cols-lg-3 row row-cols-md-2 row-cols-1 m-3 justify-content-center">
-            <div class="col departments-card-col">
-                <div class="card departments-card">
+        <div class="row mb-5 ">
+            <div class="col-lg-4 col-md-12 col-sm-12 departments-card-col">
+                <div class="card departments-card h-100" id="pu-card">
                     <a href="pu/index.html" class="stretched-link"></a>
-                    <img src="images/college-bg.jpg" alt="" class="card-img">
-                    <div class="card-img-overlay departments-img-overlay">
+                    <div class="departments-img-overlay">
                         <h3 class="card-title text-center m-3"> PU College </h3>
                         <p class="card-text m-3">
                             The Government PU College, Rajanakunte, Bangalore, Karnataka, has been a part of the
@@ -81,11 +81,10 @@
                 </div>
             </div>
 
-            <div class="col departments-card-col">
-                <div class="card departments-card">
+            <div class="col-lg-4 col-md-12 col-sm-12 departments-card-col">
+                <div class="card departments-card h-100" id="primary-card">
                     <a href="primaryschool.html" class="stretched-link"></a>
-                    <img src="" alt="" class="card-img">
-                    <div class="card-img-overlay departments-img-overlay">
+                    <div class="departments-img-overlay">
                         <h3 class="card-title text-center m-3">Primary School</h3>
                         <p class="card-text m-3">
                             The Government Primary School in Rajanakunte, Karnataka, traces its roots back to 1945.
@@ -97,11 +96,10 @@
                 </div>
             </div>
 
-            <div class="col departments-card-col">
-                <div class="card departments-card">
+            <div class="col-lg-4 col-md-12 col-sm-12 departments-card-col">
+                <div class="card departments-card h-100" id="highschool-card">
                     <a href="highschool.html" class="stretched-link"></a>
-                    <img src="" alt="" class="card-img">
-                    <div class="card-img-overlay departments-img-overlay">
+                    <div class="departments-img-overlay">
                         <h3 class="card-title text-center m-3">High School</h3>
                         <p class="card-text m-3">
                             Established in 2009, the Government High School in Rajanakunte, Bangalore, Karnataka,
@@ -113,19 +111,6 @@
             </div>
         </div>
     </div>
-
-    <script>
-        const staffDetails = document.getElementById("staffDetails")
-        document.addEventListener("DOMContentLoaded", () =>
-            $.getJSON("highschool.json", (json) => {
-                // staffsJSON = json
-                // console.log(json)
-                // console.log("JSON File loaded");
-                loadStaffDetails(json)
-            })
-        )
-    </script>
-    <script src="staff-details.js"></script>
 
     <!-- start footer Area -->
     <footer class="footer-area section-gap">
